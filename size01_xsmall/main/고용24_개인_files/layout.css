@@ -91,7 +91,7 @@ header .header_main_area .header_info .icon{
     width: 28px;
     height: 20px;
     margin-right: 8px;
-    background: url(../../../img/main_241120/header_flag2.png) no-repeat;
+    background: url(../../../img/header_flag2.png) no-repeat;
 }
 
 header .header_main_area {
@@ -157,7 +157,7 @@ header .header_main_area .header_util_area > ul > li > button {
 }
 
 header .header_main_area .header_util_area > ul > li.header_btn_search > button {
-  background: url(../../../img/main_241120/ico_svg/ico_MO_search.svg);
+  background: url(../../../img/ico_svg/ico_MO_search.svg);
   background-size: contain;
   width: 24px;
   height: 32px;
@@ -178,7 +178,7 @@ header .header_main_area .header_util_area > ul > li.header_btn_search .header_m
 header .header_main_area .header_util_area > ul > li.header_btn_search .header_main_search .search_close {
   width: 24px;
   height: 32px;
-  background: url(../../../img/main_241120/ico_svg/ico_MO_search.svg);
+  background: url(../../../img/ico_svg/ico_MO_search.svg);
   background-size: contain;
 }
 header .header_main_area .header_util_area > ul > li.header_btn_search .header_main_search input[type=text] {
@@ -809,7 +809,7 @@ header .header_main_area .header_util_area > ul > li.header_btn_all_menu, header
 header .header_main_area .header_util_area > ul > li.header_btn_all_menu > button {
   width: 40px;
   height: 31px;
-  background: url(../../../img/main_241120/ico_svg/ico_MO_menu.svg);
+  background: url(../../../img/ico_svg/ico_MO_menu.svg);
   background-size: contain;
 }
 
@@ -859,7 +859,7 @@ header .header_main_area .header_util_area > ul > li.header_btn_all_menu { displ
 header .header_main_area .header_util_area > ul > li.header_btn_all_menu > button {
   width: 40px;
   height: 31px;
-  background: url(../../../img/main_241120/ico_svg/ico_MO_menu.svg) no-repeat;
+  background: url(../../../img/ico_svg/ico_MO_menu.svg) no-repeat;
   background-size: contain;
 }
 
