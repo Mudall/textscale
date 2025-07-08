@@ -241,19 +241,6 @@ ComLib.ajaxReqObj = function(url, objData, isAsync){
 
 	setLimit30minute();
 
-	var request = ComLib.ajaxReq(url, sendData, isAsync);
-    request.fail(function (xhr, statusText, errorThrown) {//실패는 공통으로 처리
-        spin.stop();
-        try {
-            if(xhr.responseJSON["redirectUrl"] != null && xhr.responseJSON["redirectUrl"] != ""){//redirectUrl이 있을경우
-                location.href = xhr.responseJSON.redirectUrl;
-            }
-        } catch(e) {
-            console.log(xhr.responseText);
-            alert("이용에 불편을 드려 죄송합니다.\n일시적인 오류가 발생했습니다. 잠시 후 페이지를 다시 접속하여 주시기 바랍니다.\n계속 문제가 발생할 경우 고객센터(1577-7114, 유료)로 문의하여 주시기 바랍니다.");
-
-        }
-    });
     return request;
 };
 

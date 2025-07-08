@@ -859,7 +859,7 @@ header .header_main_area .header_util_area > ul > li.header_btn_all_menu { displ
 header .header_main_area .header_util_area > ul > li.header_btn_all_menu > button {
   width: 40px;
   height: 31px;
-  background: url(../../../img/ico_svg/ico_MO_menu.svg) no-repeat;
+  background: url(../../../img/ico_MO_menu.svg) no-repeat;
   background-size: contain;
 }
 

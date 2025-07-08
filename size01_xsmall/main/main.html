@@ -2735,9 +2735,7 @@
 					location.href = "market://details?id=kr.or.keis.mo";
 				}</script>
 		</div>
-		<div class="quick_top" style="display: none;">
-			<a href="javascript:void(0)" class="btn_quick_top" title="맨위로 가기"><span class="blind">맨위로 가기</span></a>
-		</div>
+		
 		<script type="text/javascript">$(document).ready(function () {
 				$(".btn_footeropenPopClose").off('click').on('click', function () {
 					var layerPId = $(this.parentElement).attr("id");
@@ -2936,48 +2934,10 @@
 			<!-- main layer popup --><!-- //main layer popup -->
 		</footer>
 	</div>
-	<div class="bottom_bar person" data-include="bottombar" data-bar-type="person" data-active-menu="1" style="">
-		<ul>
-			<li>
-				<a href="javascript:void(0);" title="정책/제도"
-					onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000001645&#39;, &#39;/c/f/1100/selecPolicyListPost.do&#39;, &#39;EBM02&#39;, &#39;N&#39;, &#39;&#39;)"
-					class="bottom_bar_job_center">
-					<i></i>
-					<span>정책/제도</span>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0);" title="통합검색"
-					onclick="$(&#39;#untySearchFlag&#39;).val(&#39;bottom&#39;);javascript:$(&#39;.search_open&#39;).click(); return false;"
-					class="bottom_bar_btn_search">
-					<i></i>
-					<span>통합검색</span>
-				</a>
-			</li>
-			<li>
-				<a href="https://m.work24.go.kr/cm" title="메인화면 이동" class="bottom_bar_home active">
-					<i></i>
-					<span>홈</span>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0);" title="이용안내"
-					onclick="location.href=&#39;/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p01&#39;;"
-					class="bottom_bar_chatbot">
-					<i></i>
-					<span>이용안내</span>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0);" title="페이지 이동"
-					onclick="fn_goPageUrl(&#39;/cm&#39;, &#39;EBG020000001564&#39;, &#39;/z/b/0210/openLginPagePost.do&#39;, &#39;EBG02&#39;, &#39;N&#39;, &#39;ZB0210M00&#39;)"
-					class="bottom_bar_customer_center">
-					<i></i>
-					<span>로그인</span>
-				</a>
-			</li>
-		</ul>
+	<div class="next_btn_bar">
+		<button><a href="../allmenu/allmenu.html">다음 페이지로 이동</a></button>
 	</div>
+
 	<div class="popup_full abc in_page" id="pop_inquireIndiStipAgree">
 		<div class="popup_header">
 			<h2 class="popup_title">약관동의</h2>
