@@ -24,25 +24,50 @@
             <button id="btnNext"><p>다음 페이지로 이동</p></button>
         </div>
     </section>
-
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const scrollUl = document.querySelector('.scroll-ul');
+    const ul = document.querySelector('.scroll-ul');
     const items = document.querySelectorAll('.scroll-ul li');
     const btn = document.getElementById('btnNext');
     let currentIndex = 0;
+    let startX = 0;
+    let endX = 0;
+
+    function goToSlide(index) {
+      const target = items[index];
+      target.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+    }
+
+    ul.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    ul.addEventListener('touchend', (e) => {
+      endX = e.changedTouches[0].clientX;
+      const diff = endX - startX;
+
+      if (Math.abs(diff) < 30) return;
+
+      if (diff < 0 && currentIndex < items.length - 1) {
+        currentIndex++;
+      } else if (diff > 0 && currentIndex > 0) {
+        currentIndex--;
+      }
+
+      goToSlide(currentIndex);
+    });
 
     btn.addEventListener('click', () => {
-      currentIndex++;
-      if (currentIndex >= items.length) {
-        currentIndex = items.length - 1;
-        return;
+      if (currentIndex < items.length - 1) {
+        currentIndex++;
+        goToSlide(currentIndex);
       }
-      const next = items[currentIndex];
-      next.scrollIntoView({ behavior: 'smooth', inline: 'start' });
     });
   });
 </script>
+
+
+
 
 
 </body>
