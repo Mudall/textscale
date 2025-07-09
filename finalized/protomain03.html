@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../finalized/reset.css" />
+    <link rel="stylesheet" href="../finalized/style.css" />
+    <link rel="stylesheet" href="../finalized/finalized.css" />
+
+    <title></title>
+</head>
+
+<body>
+    <section>
+        <figure><img src="../finalized/finalized_img/big_main.jpg" alt=""></figure>
+
+        <div class="fixed-area">
+            <button id="btnNext"><a href="../finalized/protomain01.html"><p class="start">처음 페이지로 이동</p></a></button>
+        </div>
+    </section>
+
+    <script>
+    (function() {
+        let startX = 0;
+        let startY = 0;
+        let distX = 0;
+        let distY = 0;
+        const threshold = 80; // 최소 스와이프 거리
+        const restraint = 100; // 수직 방향 제한
+
+        document.addEventListener('touchstart', function(e) {
+        const touch = e.changedTouches[0];
+        startX = touch.pageX;
+        startY = touch.pageY;
+        distX = 0;
+        distY = 0;
+        }, false);
+
+        document.addEventListener('touchend', function(e) {
+        const touch = e.changedTouches[0];
+        distX = touch.pageX - startX;
+        distY = touch.pageY - startY;
+
+        // 수직 이동이 너무 크면 스와이프로 인식하지 않음
+        if (Math.abs(distY) > restraint) return;
+
+        if (distX <= -threshold) {
+            // swipeleft: 왼쪽으로 스와이프
+            console.log("다음 페이지가 없습니다.");
+
+        } else if (distX >= threshold) {
+            // swiperight: 오른쪽으로 스와이프
+            if (history.length > 1) {
+            history.back();
+            } else {
+            location.href = "../finalized/protomain02.html";
+            }
+        }
+        }, false);
+    })();
+    </script>
+
+
+
+</body>
+
+</html>
