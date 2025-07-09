@@ -48,13 +48,13 @@
 
         if (distX <= -threshold) {
             // swipeleft: 왼쪽으로 스와이프
-            location.href = "../finalized/protomain01.html";
+            location.href = "../finalized/protomain03.html";
         } else if (distX >= threshold) {
             // swiperight: 오른쪽으로 스와이프
             if (history.length > 1) {
             history.back();
             } else {
-            location.href = "../finalized/protomain03.html";
+            location.href = "../finalized/protomain01.html";
             }
         }
         }, false);
