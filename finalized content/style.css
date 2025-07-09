@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../fonts/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../fonts/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../fonts/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+:root {
+  --main-color: #3f58d4;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard' !important;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  -webkit-text-size-adjust:none;
+}
+
+
+html {
+  font-size: 16px; 
+  width: 100%;
+  height: 100dvh;
+  max-width: 768px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+body {
+  color: #222;
+  background: #fff;
+  line-height: 1.5;
+  word-break: keep-all;
+  -webkit-text-size-adjust: none;
+
+}
+
+/* 링크 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 이미지 반응형 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+span {vertical-align: baseline;}
+
+
+button {
+  cursor: pointer;
+}
+
+input, textarea, select, button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid #333; 
+}
+
+
+

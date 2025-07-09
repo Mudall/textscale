@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../finalized content/reset.css" />
+    <link rel="stylesheet" href="../finalized content/style.css" />
+    <link rel="stylesheet" href="../finalized content/finalized.css" />
+
+    <title></title>
+</head>
+
+<body>
+    <section>
+        <ul class="scroll-ul">
+            <li><figure><img src="../finalized content/finalized_img/xsmall_main.png" alt=""></figure></li>
+            <li><figure><img src="../finalized content/finalized_img/xsmall_allmenu.png" alt=""></figure></li>
+            <li><figure><img src="../finalized content/finalized_img/xsmall_contents.png" alt=""></figure></li>
+        </ul>
+
+        <div class="fixed-area">
+            <button id="btnNext"><p>다음 페이지로 이동</p></button>
+        </div>
+    </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const scrollUl = document.querySelector('.scroll-ul');
+    const items = document.querySelectorAll('.scroll-ul li');
+    const btn = document.getElementById('btnNext');
+    let currentIndex = 0;
+
+    btn.addEventListener('click', () => {
+      currentIndex++;
+      if (currentIndex >= items.length) {
+        currentIndex = items.length - 1;
+        return;
+      }
+      const next = items[currentIndex];
+      next.scrollIntoView({ behavior: 'smooth', inline: 'start' });
+    });
+  });
+</script>
+
+
+</body>
+
+</html>

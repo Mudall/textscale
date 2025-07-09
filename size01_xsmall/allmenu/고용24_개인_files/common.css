@@ -4935,8 +4935,8 @@ a + .label_txt, .label_txt + span, .label_txt + strong {
 .popup_allmenu .sitemap {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  /*height: 100%;*/
+  overflow: scroll;
+  height: 100%;
 }
 .popup_allmenu .sitemap .sitemap_top {
   display: flex; padding: 0.2rem 1.25rem 1.25rem 1.25rem;
@@ -5050,7 +5050,6 @@ a + .label_txt, .label_txt + span, .label_txt + strong {
 .popup_allmenu .sitemap .sitemap_menu .sitemap_sub {
   display: flex;
   flex-direction: column;
-  overflow-y: scroll !important;
   z-index : 240;
   width: calc(100% - 4px);
 }
