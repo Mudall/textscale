@@ -14,7 +14,7 @@
 
 <body>
     <section>
-        <figure><img src="../finalized content/finalized_img/xsmall_allmenu.png" alt=""></figure>
+        <figure><img style="padding-bottom: 50px;" src="../finalized content/finalized_img/xsmall_allmenu.png" alt=""></figure>
 
         <div class="fixed-area">
             <button id="btnNext"><a href="../finalized content/proto01-3.html"><p>다음 페이지로 이동</p></a></button>
@@ -27,8 +27,8 @@
         let startY = 0;
         let distX = 0;
         let distY = 0;
-        const threshold = 30; // 최소 스와이프 거리(px)
-        const restraint = 100; // 수직 방향 제한(스와이프 인정 범위)
+        const threshold = 30; // 최소 스와이프 거리
+        const restraint = 100; // 수직 방향 제한
 
         document.addEventListener('touchstart', function(e) {
         const touch = e.changedTouches[0];
@@ -51,7 +51,6 @@
             location.href = "../finalized content/proto01-3.html";
         } else if (distX >= threshold) {
             // swiperight: 오른쪽으로 스와이프
-            // 이전 페이지 이동 또는 원하는 URL 지정
             if (history.length > 1) {
             history.back();
             } else {
