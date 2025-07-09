@@ -5542,7 +5542,7 @@ a + .label_txt, .label_txt + span, .label_txt + strong {
   color: #fff;
 }
 
-.sitemap .icon {display:flex;  width:32px; height:32px; margin-right: 4px; background: url("../images/main_new/ico32_arrow_circle_right.png") no-repeat;}
+.sitemap .icon {display:flex;  width:32px; height:32px; margin-right: 4px; background: url("../../../img/ico32_arrow_circle_right.png") no-repeat;}
 .sitemap .dir-div { display: flex; flex-wrap: wrap; justify-content: center;}
 .sitemap .dir-div .famenu { width: calc(100% / 4); margin: -4px 0px 10px 0px;}
 .sitemap .dir-div .famenu a { display: block; /*height: 100%;*/ text-align: center;}
