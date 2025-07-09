@@ -60,3 +60,5 @@ header .header_main_area .header_info {font-size: 14px!;}
 .popup_allmenu .sitemap .sitemap_menu .sitemap_sub .menu-accordion > ul > li > .menu-accordion_btn {text-indent: 0.5rem;}
 
 .unify_search input[type='radio'] + label::before {margin: 8px 5px 0 0;}
+
+.main_new .main_work24_news .list li a .list_title, .main_new .main_beginner_wrap .list li .list_body span {font-size: 22px; line-height: 1.2;}

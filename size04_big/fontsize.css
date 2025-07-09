@@ -65,3 +65,5 @@ header .header_main_area .header_info {font-size: 14px!;}
 .main_new .main_employment_information .cl_logo {width: 100%;}
 .main_new .main_work24_news .list li a .list_title {font-size: 20px;}
 .main_new .search_bar * {font-size: 18px !important;}
+
+.main_new .main_work24_news .list li a .list_title, .main_new .main_beginner_wrap .list li .list_body span {font-size: 24px; line-height: 1.2;}

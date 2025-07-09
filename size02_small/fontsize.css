@@ -57,3 +57,4 @@ header .header_main_area .header_info {font-size: 14px!;}
 .sitemap .dir-div {gap: 8px;}
 
 .unify_search input[type='radio'] + label::before {margin: 5px 5px 0 0;}
+.main_new .main_work24_news .list li a .list_title, .main_new .main_beginner_wrap .list li .list_body span {font-size: 20px;}
