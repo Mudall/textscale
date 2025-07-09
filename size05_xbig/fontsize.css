@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+html *, .main_new .freqAccMnu_swiper_wrap a p,
+.main_new .main_work24_news .list li a .date,
+.main_new .main_work24_news .list li a .topic,
+.main_new .mfs_more span,
+.sitemap .dir-div .famenu a p,
+header .header_sub_area *,
+.main_new .main_beginner_wrap .list li .list_body span,
+.main_new .main_work24_news .list li a .list_title {font-size: 22px; line-height: 1.2;}
+
+h1 {font-size: 36px !important;}
+h2, h3, h4, h5, h6, .s1_r, .s1_r span,
+.main_new .main_favorite_service .swiper-slide a .tit,
+.main_new .main_employment_information .cl_tit,
+.tit_group * {font-size: 28px !important; line-height: 1.2 !important;}
+
+
+
+.header_info *, .footer_address * {font-size: 14px !important;}
+.quick_links * {font-size: 16px !important;}
+.bottom_bar > ul > li > a span {font-size: 12px !important;}
+.accordion > ul > li > .ui-accordion_btn::after {top: 10px;}
+.unify_search span {font-size: 16px !important;}
+
+header .header_main_area .header_title_area .header_division > li > a {font-size: 16px !important;}
+header .header_main_area .header_info {font-size: 14px!;}
+
+
+.next_btn_bar {box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.25); width: 100%; padding: 10px 20px; height: 58px; position: fixed; z-index: 9999; background-color: #fff; bottom: 0; left: 50%; transform: translateX(-50%); }
+.next_btn_bar button {width: 100%; height: 100%; margin: auto; background-color: #4D65E1;border-radius: 4px;}
+.next_btn_bar button a {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+.next_btn_bar button a p {color: #fff; line-height: 1; font-weight: 600; font-size: 16px; position: relative; padding-right: 30px;}
+.next_btn_bar button a p::after {content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: url('../img/btn_right.svg') no-repeat center / contain; width: 24px; height: 24px;}
+.logos.gov {margin-bottom: 78px;} 
+.sitemap .dir-div {gap: 8px;}
+.menu-accordion_btn {display: flex; align-items: center;}
+.menu-accordion_btn img {margin-left: 20px; margin-right: 0;}
+.popup_allmenu .sitemap .sitemap_menu .sitemap_sub .menu-accordion > ul > li > .menu-accordion_btn {text-indent: 0.5rem;}
+
+.unify_search input[type='radio'] + label::before {margin: 9px 5px 0 0;}
+.main_new .mfs_tab button {word-break: auto-phrase;}
+.main_new .main_login .main_login_notice .s1_r {line-height: 1.3;}
+.main_new .search_bar * {font-size: 18px !important;}
+
+.main_new .main_favorite_service .swiper-slide a .tit,
+.main_new .main_favorite_service .swiper-slide a .service_summary p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; word-break: break-word;}
+
+.main_new .main_favorite_service .swiper-slide a .tit {height: initial;}
+
+
+.header_subMain_area .header_title_area .header_division * {font-size: 16px !important;}
