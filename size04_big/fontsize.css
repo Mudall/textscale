@@ -38,3 +38,6 @@ header .header_main_area .header_info {font-size: 14px!;}
 
 .unify_search input[type='radio'] + label::before {margin: 9px 5px 0 0;}
 .main_new .mfs_tab button {word-break: auto-phrase;}
+
+.main_new .main_employment_information .cl_logo {width: 100%;}
+.main_new .main_work24_news .list li a .list_title {font-size: 20px;}
