@@ -23,3 +23,6 @@ header .header_main_area .header_info {font-size: 14px!;}
 .logos.gov {margin-bottom: 78px;} 
 
 
+.footer_address * {font-size: 14px !important;}
+.footer_address .address * {font-size: 13px !important;}
+
