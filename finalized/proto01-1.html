@@ -63,7 +63,29 @@
     })();
     </script>
 
+    <script>
+        document.addEventListener('touchend', function(e) {
+            const touch = e.changedTouches[0];
+            distX = touch.pageX - startX;
+            distY = touch.pageY - startY;
 
+            // a, button, input, textarea 등을 터치했으면 스와이프 무시
+            if (e.target.closest('a, button, input, textarea, select, label')) return;
+
+            if (Math.abs(distY) > restraint) return;
+
+            if (distX <= -threshold) {
+                location.href = "../finalized/proto01-2.html";
+            } else if (distX >= threshold) {
+                if (history.length > 1) {
+                    history.back();
+                } else {
+                    console.log("이전 페이지가 없습니다.");
+                }
+            }
+        }, false);
+
+    </script>
 
 </body>
 
