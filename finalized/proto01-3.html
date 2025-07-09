@@ -5,19 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="../finalized content/reset.css" />
-    <link rel="stylesheet" href="../finalized content/style.css" />
-    <link rel="stylesheet" href="../finalized content/finalized.css" />
+    <link rel="stylesheet" href="../finalized/reset.css" />
+    <link rel="stylesheet" href="../finalized/style.css" />
+    <link rel="stylesheet" href="../finalized/finalized.css" />
 
     <title></title>
 </head>
 
 <body>
     <section>
-        <figure><img src="../finalized content/finalized_img/xsmall_allmenu.jpg" alt=""></figure>
+        <figure><img src="../finalized/finalized_img/xsmall_contents.png" alt=""></figure>
 
         <div class="fixed-area">
-            <button id="btnNext"><a href="../finalized content/proto01-3.html"><p>다음 페이지로 이동</p></a></button>
+            <button id="btnNext"><a href="../finalized/proto01-1.html"><p class="start">처음 페이지로 이동</p></a></button>
         </div>
     </section>
 
@@ -48,13 +48,14 @@
 
         if (distX <= -threshold) {
             // swipeleft: 왼쪽으로 스와이프
-            location.href = "../finalized content/proto01-3.html";
+            console.log("다음 페이지가 없습니다.");
+
         } else if (distX >= threshold) {
             // swiperight: 오른쪽으로 스와이프
             if (history.length > 1) {
             history.back();
             } else {
-            location.href = "../finalized content/proto01-1.html";
+            location.href = "../finalized/proto01-2.html";
             }
         }
         }, false);
