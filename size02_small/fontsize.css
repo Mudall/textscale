@@ -1,12 +1,22 @@
 @charset "UTF-8";
 
-html * {font-size: 14px;}
-h1 {font-size: 20px !important;}
-h2, h3, h4, h5, h6, .s1_r, .s1_r span {font-size: 18px !important;}
+html *, .main_new .freqAccMnu_swiper_wrap a p,
+.main_new .main_work24_news .list li a .date,
+.main_new .main_work24_news .list li a .topic,
+.main_new .mfs_more span,
+.sitemap .dir-div .famenu a p,
+header .header_sub_area * {font-size: 16px;}
+
+h1 {font-size: 24px !important;}
+h2, h3, h4, h5, h6, .s1_r, .s1_r span,
+.main_new .main_favorite_service .swiper-slide a .tit,
+.main_new .main_employment_information .cl_tit,
+.tit_group * {font-size: 20px !important;}
 
 
 
-.header_info * {font-size: 14px !important;}
+.header_info *, .footer_address * {font-size: 14px !important;}
+.quick_links * {font-size: 16px !important;}
 .bottom_bar > ul > li > a span {font-size: 12px !important;}
 .accordion > ul > li > .ui-accordion_btn::after {top: 10px;}
 .unify_search span {font-size: 16px !important;}
@@ -21,4 +31,4 @@ header .header_main_area .header_info {font-size: 14px!;}
 .next_btn_bar button a p {color: #fff; line-height: 1; font-weight: 600; font-size: 16px; position: relative; padding-right: 30px;}
 .next_btn_bar button a p::after {content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: url('../img/btn_right.svg') no-repeat center / contain; width: 24px; height: 24px;}
 .logos.gov {margin-bottom: 78px;} 
-
+.sitemap .dir-div {gap: 8px;}
