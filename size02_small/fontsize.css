@@ -32,3 +32,5 @@ header .header_main_area .header_info {font-size: 14px!;}
 .next_btn_bar button a p::after {content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: url('../img/btn_right.svg') no-repeat center / contain; width: 24px; height: 24px;}
 .logos.gov {margin-bottom: 78px;} 
 .sitemap .dir-div {gap: 8px;}
+
+.unify_search input[type='radio'] + label::before {margin: 5px 5px 0 0;}
