@@ -74,3 +74,4 @@ a, button, li, label, input {pointer-events: none;}
 .fixed-area button p::after {content: ''; position: absolute; right: 0; top: 50%;  transform: translateY(-50%); background: url('../img/btn_right.svg') no-repeat center / contain; width: 24px; height: 24px;}
 .fixed-area button p.start {padding-left: 32px; padding-right: 0;}
 .fixed-area button p.start::after {right: initial; left: 0; transform: translateY(-50%) rotate(180deg); background: url('../img/btn_right.svg') no-repeat center / contain;}
+#btnNext * {font-size: 16px;}
