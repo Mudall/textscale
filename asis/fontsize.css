@@ -22,9 +22,8 @@
   font-display: swap;
 }
 
+
 a, button, li, label, input {pointer-events: none;}
-
-
 
 .fixed-area { z-index: 9999; width: 100%; height: 58px; background-color: #fff; padding: 10px 20px; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);}
 .fixed-area button {pointer-events: initial; width: 100%; height: 100%; background-color: #4d65e1; border-radius: 4px;}
