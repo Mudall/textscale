@@ -25,9 +25,12 @@
 
 a, button, li, label, input {pointer-events: none;}
 
-.fixed-area { z-index: 9999; width: 100%; height: 58px; background-color: #fff; padding: 10px 20px; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);}
+.fixed-area {box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.1); z-index: 9999; width: 100%; height: auto; background-color: #fff; padding: 10px 20px; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);}
+.fixed-area .tit {margin-bottom: 8px; text-align: center;}
+.fixed-area .tit p {font-size: 20px; font-weight: 600; color: #111;}
+
 .fixed-area button {pointer-events: initial; width: 100%; height: 100%; background-color: #4d65e1; border-radius: 4px;}
-.fixed-area button a {pointer-events: initial; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;}
+.fixed-area button a {pointer-events: initial; padding: 8px 0; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;}
 .fixed-area button p {position: relative; padding-right: 32px;  color: #fff; font-weight: 600; line-height: 1;}
 .fixed-area button p::after {content: ''; position: absolute; right: 0; top: 50%;  transform: translateY(-50%); background: url('../img/btn_right.svg') no-repeat center / contain; width: 24px; height: 24px;}
 .fixed-area button p.start {padding-left: 32px; padding-right: 0;}
